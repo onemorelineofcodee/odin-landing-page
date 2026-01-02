@@ -1,68 +1,138 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
+* {
+    margin : 0px ;
+    padding : 0px ;
+    border : 0px ;
+
 }
 
-div {
-    border : 2px solid black;
-}
-
-body {
-    height : 100vh;
-}
-
-.header{
-    height:30%;
-    display:flex;
-    flex-direction:column;
-}
-
-.info {
-    height:23%;
-}
-
-.quote {
-    height:23%;
-}
-
-.footer{
-    height:24%;
-}
-
-.highfoot{
-    height : 75%;
-}
-
-.lowfoot{
-    height:25%;
-}
-
-.header , .lowfoot {
+.header {
     background-color: #1F2937;
 }
 
-.header-logo{
-    flex : 3 1 0%;
-    text-align:center;
-    min-width:max-content;
-    color: aliceblue;
-    padding: 10px ;
-    text-align: center;
-}
-
 .header-links{
-    flex : 2 1 0%;
     display: flex;
+    font-family: "Roboto";
+    color : #F9FAF8
     
 }
 
-.header-link {
-    padding : 5px 20px;
-    min-width: max-content;
-    color : aliceblue;
+.header-links .logo {
+    margin-left : 10%;
+    margin-top : 14px ;
 }
 
-.header-upper {
-    display: flex;
+.logo {
+    flex : 3 1 auto;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header-links > .links {
+    flex : 2 1 auto;
+    
+}
+
+.header-links .links ul {
+    display : flex;
+    justify-content: flex-start;
+}
+.header-links > .links li {
+    margin : 5px 7%;
+    list-style-type: none;
+    font-size: 20px;
+
+}
+
+.header-info {
+    display : flex;
+}
+
+.left {
+    flex : 1;
+}
+
+.left > *{
+    margin-left : 20%;
+}
+.right {
+    flex : 1;
+}
+.header-info .right img {
+    margin-top : 4vh ;
+    margin-left : 1.5vh;
+    width : 500px ;
+    aspect-ratio: 7/4;
+    margin-bottom: 2vh;
+}
+
+.left > .title{
+    font-size: 48px;
+    color : #F9FAF8;
+    font-weight: 900;
+    margin-top : 4vh ;
+    
+}
+
+.left >  .info-text{
+    font-size : 24px;
+    color : #E5E7EB;
+}
+
+.left button {
+    margin-top : 1vh;
+    background-color: #3882F6;
+    color : #F9FAF8;
+    font-weight: 900;
+    padding : 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button:active {
+  box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 0.6),
+    inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}
+
+.info > p {
+    margin-top : 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size : 36px;
+    color : #1f2937;
+    font-weight: 900;
+}
+
+.albums-container {
+    display : flex;
+    justify-content: center;
+    gap : 5vw;
+    margin : 5px 10vw;
+}
+
+.albums-container .albums img{
+    width: 175px;
+    border-radius: 10px;
+
+}
+
+.albums-container .albums p {
+    text-align: center;
+    max-width: 170px;
+}
+
+
+.quote {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    color : #1f2937;
+    font-weight: 300;
+    padding : 5vh 7vw;
+}
+
+.quote .author {
+    font-weight : bold ;
+    color : black;
+    font-size: 24px;
+    text-align : right;
 }
